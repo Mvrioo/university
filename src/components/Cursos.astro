@@ -1,0 +1,41 @@
+---
+import cursos from "../config/cursos.json";
+---
+
+<h1 class="text-[#0488A6] text-[86px] ml-20 mt-20">Explora nuestros cursos</h1>
+
+<swiper-container class="mySwiper" slides-per-view="auto">
+    {
+        cursos.map((cursos) => (
+        <swiper-slide class="relative flex justify-between items-start ml-20 my-20 bg-[#FFF] w-[300px] sm:w-[1225px] h-[250px] sm:h-[600px] p-[17px] sm:p-[65px] px-[40px] sm:px-[80px] flex-row rounded-[17px] shadow-[0px_15px_40px_rgba(2,64,89,0.4)]">
+              
+            <!-- Lado izquierdo: Logo + Texto -->
+            <div class="flex flex-col justify-start items-start w-1/2">
+                <!-- Logo -->
+                <img src="images/logo3.png" alt="Logo" class="h-[50px] sm:h-[10rem] m-[1.5rem]" />
+
+                <!-- Descripción -->
+                <p class="text-[#024059] text-[20px] sm:text-[18px] text-left font-['Helvetica'] leading-[130%] m-[1.5rem]">
+                    Rheoli presenta formatos de entrenamientos focalizados en construir equipos de alto desempeño dentro de la compañía, dando énfasis en las materias atingentes a los desafíos actuales, con aplicación práctica y experiencia internacional. Junto al equipo de relatores expertos y reconocidos, entregamos un sello distintivo de calidad en cada ciclo de aprendizaje.
+                </p>
+
+                <!-- Botón -->
+                <a
+                    href=""
+                    class="flex h-[1.8rem] justify-center items-center mx-[0.625rem] px-[4rem] py-[1.5rem] text-[24px] flex-shrink-0 bg-[#04C4D9] text-white transition hover:bg-[#0488A6] rounded"
+                    style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;"
+                >
+                    Ver cursos
+                </a>
+            </div>
+
+            <!-- Imagen en la esquina derecha -->
+            <img src="images/fondocards.png" alt="Curso" class="absolute top-0 right-0 h-[150px] sm:h-[25rem]" />
+
+        </swiper-slide>
+        ))
+    }
+</swiper-container>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>

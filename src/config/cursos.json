@@ -1,0 +1,22 @@
+[
+    {
+        "title":"Entrenamiento Ejecutivo",
+        "image":"iconos/entrenamiento.png"
+    },
+    {
+        "title":"Talleres In-Company",
+        "image":"iconos/talleres.png"
+    },
+    {
+        "title":"Cursos Auditoría Ágil",
+        "image":"iconos/cursos.png"
+    },
+    {
+        "title":"Cursos Auditoría TI",
+        "image":"iconos/cursosti.png"
+    },
+    {
+        "title":"Entrenamiento Internacional",
+        "image":"iconos/entrenamientoint.png"
+    }
+]
