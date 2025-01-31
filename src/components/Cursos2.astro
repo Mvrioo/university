@@ -2,46 +2,52 @@
 import cursos from "../config/cursos.json";
 ---
 
-<hr class="absolute bg-[#F2F23F] w-[0.54rem] h-full border-none" />
-<!-- Contenedor con fondo detrás -->
-<div class="bg-[#024059] py-[79px] pl-[35px] sm:pl-[100px] w-full">
-    <img src="images/logo1.png" alt="" class="h-[6rem] sm:h-[9rem] mb-[61px]" />
-
-    <!-- Swiper -->
-    <swiper-container class="mySwiper" slides-per-view="auto">
-        {
-            cursos.map((cursos) => (
-                <swiper-slide class="flex justify-center items-center w-[250px] sm:w-[420px] h-[250px] sm:h-[380px] bg-[#0488A6] text-white p-[17px] sm:p-[65px] px-[40px] sm:px-[80px] flex-col justify-start items-start rounded-[17px] shadow-lg mr-[8px] sm:mr-[30px]">
-                    
-                    <!-- Título responsivo -->
-                    <h2 class="text-white text-center font-['Helvetica'] text-[23px] sm:text-[36px] font-bold leading-[88%]">
-                        {cursos.title}
-                    </h2>
-
-                    <div class="mt-4 sm:mt-10 flex flex-col items-center sm:items-start">
-                        <img src={cursos.image} alt="" class="h-[80px] sm:h-[110px]" />
+<section id="cursos2">
+    <hr class="absolute bg-[#F2F23F] w-[0.54rem] h-[34.8rem] sm:h-full border-none z-50" />
+    
+    <div class="bg-[#024059] py-[75px] pl-[35px] sm:pl-[100px] w-full">
+        <img src="images/logo1.png" alt="" class="h-[6rem] sm:h-[9rem] mb-[61px]" />
+        
+        <!-- Swiper -->
+        <swiper-container class="mySwiper" slides-per-view="auto">
+            {
+                cursos.map((cursos) => (
+                    <swiper-slide class="flex justify-center items-center w-[250px] sm:w-[420px] h-[250px] sm:h-[380px] bg-[#0488A6] text-white p-[17px] sm:p-[65px] px-[40px] sm:px-[80px] flex-col justify-start items-start rounded-[17px] shadow-lg mr-[8px] sm:mr-[30px]">
                         
-                        {/* Botón adaptado a móviles */}
-                        <div class="absolute top-[200px] sm:top-[310px] left-1/2 sm:left-[200px] translate-x-[-50%] sm:translate-x-0 flex items-center gap-2 text-white text-xs sm:text-sm font-semibold">
-                            <a
-                                href=""
-                                class="flex h-[1.2rem] sm:h-[1.4rem] justify-center items-center px-[30px] sm:px-[41px] py-[15px] sm:py-[21px] text-xs sm:text-sm flex-shrink-0 bg-[#0488A6] text-white transition hover:bg-[#04C4D9] rounded"
-                                style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;"
-                            >
-                                Ver cursos
-                                <img
-                                    src="iconos/arrow1.svg"
-                                    alt=""
-                                    class="hidden sm:inline pl-2 pt-1 bg-transparent"
-                                />
-                            </a>
+                        <!-- Título responsivo -->
+                        <h2 class="text-white text-center font-['Helvetica'] text-xs sm:text-[36px] font-bold sm:leading-[88%]">
+                            {cursos.title}
+                        </h2>
+                        
+                        <div class="mt-4 sm:mt-10 flex flex-col items-center sm:items-start">
+                            <img src={cursos.image} alt="" class="h-[80px] sm:h-[110px]" />
+                            
+                            {/* Botón adaptado a móviles */}
+                            <div class="absolute top-[200px] sm:top-[310px] left-1/2 sm:left-[200px] translate-x-[-50%] sm:translate-x-0 flex items-center gap-2 text-white text-xs sm:text-sm font-semibold">
+                                <a
+                                    href=""
+                                    class="flex h-[1.2rem] sm:h-[1.4rem] justify-center items-center px-[30px] sm:px-[41px] py-[15px] sm:py-[21px] text-xs sm:text-sm flex-shrink-0 bg-[#0488A6] text-white transition hover:bg-[#04C4D9] rounded"
+                                    style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;"
+                                >
+                                    Ver cursos
+                                    <img
+                                        src="iconos/arrow1.svg"
+                                        alt=""
+                                        class="hidden sm:inline pl-2 pt-1 bg-transparent"
+                                    />
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </swiper-slide>
-            ))
-        }
-    </swiper-container>
-</div>
+                    </swiper-slide>
+                ))
+            }
+        </swiper-container>
+    </div>
+
+
+
+</section>
+
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
