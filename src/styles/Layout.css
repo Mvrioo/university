@@ -1,0 +1,21 @@
+swiper-container::part(bullet-active) {
+    background: #0488A6 !important; /* Mantiene el color para todas las pantallas */
+}
+
+@media (min-width: 768px) { /* Se aplica desde pantallas medianas en adelante */
+    swiper-container::part(pagination) {
+        display: flex;
+        justify-content: center;
+        transform: scale(1.7); /* Solo agranda la paginación en pantallas medianas+ */
+    }
+
+    swiper-container::part(bullet-active) {
+        transform: scale(1.2); /* Solo agranda el bullet activo en pantallas medianas+ */
+    }
+}
+
+@media (min-width: 1024px) { /* Se aplica solo en pantallas grandes */
+    swiper-container::part(pagination) {
+        height: 1.5rem; /* Solo en pantallas grandes */
+    }
+}

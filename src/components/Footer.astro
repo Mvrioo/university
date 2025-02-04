@@ -1,64 +1,51 @@
-<hr class="absolute bg-[#F2F23F] w-[0.54rem] h-[355px] border-none" />
-<section class="bg-[#024059]">
-    <img src="images/fondofooter.png" alt="" class="h-[355px] w-[600px] z-0 absolute">
-    <footer class="text-white py-12">
+<div class="relative">
+  <!-- Mascara fuera del footer para evitar que los paddings la afecten -->
+  <img src="images/fondofooter.png" alt="Mascara" class="absolute w-[15rem] h-[11rem] md:w-[20rem] md:h-[18rem] lg:w-[32rem] lg:h-[21rem] z-10 bottom-0 left-0" />
 
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-16 px-6">
-            
-            <!-- Logo -->
-            <div class="flex items-center justify-center">
-                <img src="images/logo1.png" alt="Logo" class="h-[150px]">
-            </div>
+  <!-- El footer en sí -->
+  <footer class="bg-gray-800 text-white py-4 md:py-[2rem] lg:py-18 relative">
+    <hr class="absolute left-0 top-0 w-[0.4rem] md:w-[0.54rem] h-full bg-[#F2F23F] border-none" />
 
-            <!-- Separador -->
-            <hr class="hidden sm:block w-[1px] h-[260px] bg-[#F2F23F] border-none mx-[40px] flex-grow-0">
+    <div class="flex justify-between items-center px-2 md:px-6">
+      <div class="relative pl-5 md:pl-[3rem] md:pr-[4rem] lg:pl-[5rem] lg:pr-[10rem]">
+        <img src="images/logo1.png" alt="Logo" class="w-[8rem] h-[4rem] md:w-[18rem] md:h-[8rem] lg:w-[23rem] lg:h-[10rem]" />
+      </div>
 
-            <!-- Contacto -->
-            <div class="text-center sm:text-left mb-10 mr-10">
-                <h3 class="text-[32px] font-semibold mb-[16px]">Contacto</h3> <!-- Reduje el margen inferior -->
-                <ul class="space-y-3"> <!-- Reduje el espacio entre los elementos -->
-                    <li><a href="#" class="hover:text-gray-300 text-[18px]">Solicita información</a></li>
-                    <li><a href="#" class="hover:text-gray-300 text-[18px]">Preguntas frecuentes</a></li>
-                    <li><a href="#" class="hover:text-gray-300 text-[18px]">Certificación</a></li>
-                    <li><a href="#" class="hover:text-gray-300 text-[18px]">Cursos</a></li>
-                </ul>
-            </div>
+      <!-- Separador vertical -->
+      <hr class="hidden sm:block w-[1px] h-[8rem] md:h-[14rem] lg:h-[16rem] bg-[#F2F23F] border-none" />
 
-            <!-- Separador -->
-            <hr class="hidden sm:block w-[1px] h-[260px] bg-[#F2F23F] border-none mx-[40px] flex-grow-0">
+      <div class=" sm:pl-6 sm:pr-4 md:pl-[2rem] md:pr-[4rem] lg:pl-[7rem] lg:pr-[10rem]">
+        <h3 class="text-[1rem] md:text-[1.3rem] lg:text-[2rem] font-semibold pb-1 md:pb-4">Contacto</h3>
+        <p class="py-0.5 md:py-1 text-xs md:text-base"><a href="">Solicita información</a></p>
+        <p class="py-0.5 md:py-1 text-xs md:text-base"><a href="">Preguntas frecuentes</a></p>
+        <p class="py-0.5 md:py-1 text-xs md:text-base"><a href="">Certificación</a></p>
+        <p class="py-0.5 md:py-1 text-xs md:text-base"><a href="">Cursos</a></p>
+      </div>
 
-            <!-- Síguenos -->
-            <div class="text-center sm:text-left">
-                <h3 class="text-[32px] font-semibold mb-[24px] mr-10">Síguenos</h3>
+      <!-- Separador vertical -->
+      <hr class="hidden sm:block w-[1px] h-[8rem] md:h-[14rem] lg:h-[16rem] bg-[#F2F23F] border-none" />
 
-                <div class="flex flex-col gap-y-4">
-                    <!-- CORREO -->
-                    <div class="flex items-center justify-center sm:justify-start">
-                        <div class="relative w-[50px] h-[50px] mr-[10px]">
-                            <a href="" class="absolute inset-0 border-[0.13rem] border-[#F2F23F] rounded-full flex items-center justify-center">
-                                <img src="iconos/correo1.png" alt="Icono de correo" class="w-[70%] h-[70%] object-contain"/>
-                            </a>
-                        </div>
-                        <span class="text-[#F2F23F] text-[18px]">hola@rheoliuniversity.com</span>
-                    </div>
-
-                    <!-- INSTAGRAM -->
-                    <div class="flex items-center justify-center sm:justify-start">
-                        <a href="#" class="flex items-center">
-                            <img src="iconos/instagram.png" alt="Instagram" class="w-[50px] h-[50px] mr-[10px]">
-                        </a>
-                        <span class="text-[#F2F23F] text-[18px]">@Rheoli.uni</span>
-                    </div>
-                    
-                    <!-- LINKEDIN -->
-                    <div class="flex items-center justify-center sm:justify-start">
-                        <a href="#" class="flex items-center">
-                            <img src="iconos/linkedin.png" alt="Linkedin" class="w-[50px] h-[50px] mr-[10px]">
-                        </a>
-                        <span class="text-[#F2F23F] text-[18px]">Rheoli University</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>    
-</section>
+      <div class="pl-8 sm:pl-8 md:pl-[2rem] lg:pl-[7rem]">
+        <h3 class="hidden md:block md:text-[1.3rem] lg:text-[2rem] font-semibold pb-4">Síguenos</h3>
+        <p class="flex items-center py-1 text-[#F2F23F]">
+          <a href="mailto:hola@rheoliuniversity.com">
+            <img src="iconos/correo1.png" alt="Correo" class="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-10 lg:h-10 mr-3 sm:mr-5 p-1 sm:p-0" />
+          </a>
+          <a href="mailto:hola@rheoliuniversity.com" class="hidden md:inline hover:underline">hola@rheoliuniversity.com</a>
+        </p>
+        <p class="flex items-center py-1 text-[#F2F23F]">
+          <a href="https://www.instagram.com/Rheoli.uni">
+            <img src="iconos/instagram.png" alt="Instagram" class="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-10 lg:h-10 mr-3 sm:mr-5 p-1 sm:p-0" />
+          </a>
+          <a href="https://www.instagram.com/Rheoli.uni" class="hidden md:inline hover:underline">@Rheoli.uni</a>
+        </p>
+        <p class="flex items-center py-1 text-[#F2F23F]">
+          <a href="https://www.linkedin.com/company/RheoliUniversity">
+            <img src="iconos/linkedin.png" alt="LinkedIn" class="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-10 mr-3 sm:mr-5 p-1 sm:p-0" />
+          </a>
+          <a href="https://www.linkedin.com/company/RheoliUniversity" class="hidden md:inline hover:underline">Rheoli University</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>

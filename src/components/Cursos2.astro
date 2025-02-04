@@ -1,53 +1,147 @@
----
-import cursos from "../config/cursos.json";
----
-
-<section id="cursos2">
-    <hr class="absolute bg-[#F2F23F] w-[0.54rem] h-[34.8rem] sm:h-full border-none z-50" />
+<section id="cursos2" class="relative">
+    <!-- Línea horizontal ajustada al contenedor -->
     
     <div class="bg-[#024059] py-[75px] pl-[35px] sm:pl-[100px] w-full">
+        <hr class="absolute left-0 top-0 bg-[#F2F23F] w-[0.4rem] lg:w-[0.54rem] h-full border-none md:block" />
+
+        
         <img src="images/logo1.png" alt="" class="h-[6rem] sm:h-[9rem] mb-[61px]" />
         
         <!-- Swiper -->
         <swiper-container class="mySwiper" slides-per-view="auto">
-            {
-                cursos.map((cursos) => (
-                    <swiper-slide class="flex justify-center items-center w-[250px] sm:w-[420px] h-[250px] sm:h-[380px] bg-[#0488A6] text-white p-[17px] sm:p-[65px] px-[40px] sm:px-[80px] flex-col justify-start items-start rounded-[17px] shadow-lg mr-[8px] sm:mr-[30px]">
-                        
-                        <!-- Título responsivo -->
-                        <h2 class="text-white text-center font-['Helvetica'] text-xs sm:text-[36px] font-bold sm:leading-[88%]">
-                            {cursos.title}
-                        </h2>
-                        
-                        <div class="mt-4 sm:mt-10 flex flex-col items-center sm:items-start">
-                            <img src={cursos.image} alt="" class="h-[80px] sm:h-[110px]" />
-                            
-                            {/* Botón adaptado a móviles */}
-                            <div class="absolute top-[200px] sm:top-[310px] left-1/2 sm:left-[200px] translate-x-[-50%] sm:translate-x-0 flex items-center gap-2 text-white text-xs sm:text-sm font-semibold">
-                                <a
-                                    href=""
-                                    class="flex h-[1.2rem] sm:h-[1.4rem] justify-center items-center px-[30px] sm:px-[41px] py-[15px] sm:py-[21px] text-xs sm:text-sm flex-shrink-0 bg-[#0488A6] text-white transition hover:bg-[#04C4D9] rounded"
-                                    style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;"
-                                >
-                                    Ver cursos
-                                    <img
-                                        src="iconos/arrow1.svg"
-                                        alt=""
-                                        class="hidden sm:inline pl-2 pt-1 bg-transparent"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                ))
-            }
+            
+            {/* Slide 1 */}
+            <swiper-slide class="flex w-[250px] sm:w-[420px] h-[250px] sm:h-[380px] bg-[#0488A6] text-white p-[17px] sm:p-[65px] px-[40px] sm:px-[80px] flex-col justify-start items-start rounded-[17px] shadow-lg mr-[8px] sm:mr-[30px]">
+                <h2 class="text-white text-center text-[20px] sm:text-[36px] font-bold sm:leading-[88%]">
+                    Cursos Auditoría Ágil
+                </h2>
+                <div class="mt-4 sm:mt-10 flex flex-col items-center sm:items-start w-full">
+                    <div class="flex justify-center items-center w-full">
+                        <img src="iconos/cursos.png" alt="" class="h-[80px] sm:h-[110px] object-contain mx-auto" />
+                    </div>
+                    <div class="absolute top-[200px] sm:top-[310px] left-1/2 sm:left-[200px] translate-x-[-50%] sm:translate-x-0 flex items-center gap-2 text-white text-xs sm:text-sm font-semibold">
+                        <a href="" class="flex h-[1.2rem] sm:h-[1.4rem] justify-center items-center px-[30px] sm:px-[41px] py-[15px] sm:py-[21px] text-xs sm:text-sm flex-shrink-0 bg-[#0488A6] text-white transition hover:bg-[#04C4D9] rounded" style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;">
+                            Ver cursos
+                            <img src="iconos/arrow1.svg" alt="" class="hidden sm:inline pl-2 pt-1 bg-transparent" />
+                        </a>
+                    </div>
+                </div>
+            </swiper-slide>
+            
+            {/* Slide 2 */}
+            <swiper-slide class="flex w-[250px] sm:w-[420px] h-[250px] sm:h-[380px] bg-[#0488A6] text-white p-[17px] sm:p-[65px] px-[40px] sm:px-[80px] flex-col justify-start items-center rounded-[17px] shadow-lg mr-[8px] sm:mr-[30px]">
+                <h2 class="text-white text-center text-[20px] sm:text-[36px] font-bold sm:leading-[88%]">
+                    Cursos Auditoría TI
+                </h2>
+                <div class="mt-4 sm:mt-10 flex flex-col items-center sm:items-start w-full">
+                    <div class="flex justify-center items-center w-full">
+                        <img src="iconos/cursosti.png" alt="" class="h-[80px] sm:h-[110px] object-contain mx-auto" />
+                    </div>
+                    <div class="absolute top-[200px] sm:top-[310px] left-1/2 sm:left-[200px] translate-x-[-50%] sm:translate-x-0 flex items-center gap-2 text-white text-xs sm:text-sm font-semibold">
+                        <a href="" class="flex h-[1.2rem] sm:h-[1.4rem] justify-center items-center px-[30px] sm:px-[41px] py-[15px] sm:py-[21px] text-xs sm:text-sm flex-shrink-0 bg-[#0488A6] text-white transition hover:bg-[#04C4D9] rounded" style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;">
+                            Ver cursos
+                            <img src="iconos/arrow1.svg" alt="" class="hidden sm:inline pl-2 pt-1 bg-transparent" />
+                        </a>
+                    </div>
+                </div>
+            </swiper-slide>
+            
+            {/* Slide 3 */}
+            <swiper-slide class="flex w-[250px] sm:w-[420px] h-[250px] sm:h-[380px] bg-[#0488A6] text-white p-[17px] sm:p-[65px] px-[40px] sm:px-[80px] flex-col justify-start items-center rounded-[17px] shadow-lg mr-[8px] sm:mr-[30px]">
+                <h2 class="text-white text-center text-[20px] sm:text-[36px] font-bold sm:leading-[88%]">
+                    Entrenamiento Internacional
+                </h2>
+                <div class="mt-4 sm:mt-10 flex flex-col items-center sm:items-start w-full">
+                    <div class="flex justify-center items-center w-full">
+                        <img src="iconos/entrenamientoint.png" alt="" class="h-[80px] sm:h-[110px] object-contain mx-auto" />
+                    </div>
+                    <div class="absolute top-[200px] sm:top-[310px] left-1/2 sm:left-[200px] translate-x-[-50%] sm:translate-x-0 flex items-center gap-2 text-white text-xs sm:text-sm font-semibold">
+                        <a href="" class="flex h-[1.2rem] sm:h-[1.4rem] justify-center items-center px-[30px] sm:px-[41px] py-[15px] sm:py-[21px] text-xs sm:text-sm flex-shrink-0 bg-[#0488A6] text-white transition hover:bg-[#04C4D9] rounded" style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;">
+                            Ver cursos
+                            <img src="iconos/arrow1.svg" alt="" class="hidden sm:inline pl-2 pt-1 bg-transparent" />
+                        </a>
+                    </div>
+                </div>
+            </swiper-slide>
+
+            {/* Slide 4 */}
+            <swiper-slide class="flex w-[250px] sm:w-[420px] h-[250px] sm:h-[380px] bg-[#0488A6] text-white p-[17px] sm:p-[65px] px-[40px] sm:px-[80px] flex-col justify-start items-center rounded-[17px] shadow-lg mr-[8px] sm:mr-[30px]">
+                <h2 class="text-white text-center text-[20px] sm:text-[36px] font-bold sm:leading-[88%]">
+                    Entrenamiento Ejecutivo
+                </h2>
+                <div class="mt-4 sm:mt-10 flex flex-col items-center sm:items-start w-full">
+                    <div class="flex justify-center items-center w-full">
+                        <img src="iconos/entrenamiento.png" alt="" class="h-[80px] sm:h-[110px] object-contain mx-auto" />
+                    </div>
+                    <div class="absolute top-[200px] sm:top-[310px] left-1/2 sm:left-[200px] translate-x-[-50%] sm:translate-x-0 flex items-center gap-2 text-white text-xs sm:text-sm font-semibold">
+                        <a href="" class="flex h-[1.2rem] sm:h-[1.4rem] justify-center items-center px-[30px] sm:px-[41px] py-[15px] sm:py-[21px] text-xs sm:text-sm flex-shrink-0 bg-[#0488A6] text-white transition hover:bg-[#04C4D9] rounded" style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;">
+                            Ver cursos
+                            <img src="iconos/arrow1.svg" alt="" class="hidden sm:inline pl-2 pt-1 bg-transparent" />
+                        </a>
+                    </div>
+                </div>
+            </swiper-slide>
+
+            
+            {/* Slide 5 */}
+            <swiper-slide class="flex w-[250px] sm:w-[420px] h-[250px] sm:h-[380px] bg-[#0488A6] text-white p-[17px] sm:p-[65px] px-[40px] sm:px-[80px] flex-col justify-start items-center rounded-[17px] shadow-lg mr-[8px] sm:mr-[30px]">
+                <h2 class="text-white text-center text-[20px] sm:text-[36px] font-bold sm:leading-[88%] mt-2 sm:mt-4">
+                    Analítica
+                </h2>
+                <div class="mt-4 sm:mt-6 flex flex-col items-center sm:items-start w-full">
+                    <div class="flex justify-center items-center w-full">
+                        <img src="iconos/analitica.png" alt="" class="h-[80px] sm:h-[110px] object-contain mx-auto mt-4 sm:mt-6" />
+                    </div>
+                    <div class="absolute top-[12.5rem] sm:top-[19.5rem] left-1/2 sm:left-[200px] translate-x-[-50%] sm:translate-x-0 flex items-center gap-2 text-white text-xs sm:text-sm font-semibold">
+                        <a href="" class="flex h-[1.2rem] sm:h-[1.4rem] justify-center items-center px-[30px] sm:px-[41px] py-[15px] sm:py-[21px] text-xs sm:text-sm flex-shrink-0 bg-[#0488A6] text-white transition hover:bg-[#04C4D9] rounded" style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;">
+                            Ver cursos
+                            <img src="iconos/arrow1.svg" alt="" class="hidden sm:inline pl-2 pt-1 bg-transparent" />
+                        </a>
+                    </div>
+                </div>
+            </swiper-slide>
+
+            {/* Slide 6 */}
+            <swiper-slide class="flex w-[250px] sm:w-[420px] h-[250px] sm:h-[380px] bg-[#0488A6] text-white p-[17px] sm:p-[65px] px-[40px] sm:px-[80px] flex-col justify-start items-center rounded-[17px] shadow-lg mr-[8px] sm:mr-[30px]">
+                <h2 class="text-white text-center text-[20px] sm:text-[36px] font-bold sm:leading-[88%]">
+                    Talleres In Company
+                </h2>
+                <div class="mt-4 sm:mt-10 flex flex-col items-center sm:items-start w-full">
+                    <div class="flex justify-center items-center w-full">
+                        <img src="iconos/talleres.png" alt="" class="h-[80px] sm:h-[110px] object-contain mx-auto" />
+                    </div>
+                    <div class="absolute top-[200px] sm:top-[310px] left-1/2 sm:left-[200px] translate-x-[-50%] sm:translate-x-0 flex items-center gap-2 text-white text-xs sm:text-sm font-semibold">
+                        <a href="" class="flex h-[1.2rem] sm:h-[1.4rem] justify-center items-center px-[30px] sm:px-[41px] py-[15px] sm:py-[21px] text-xs sm:text-sm flex-shrink-0 bg-[#0488A6] text-white transition hover:bg-[#04C4D9] rounded" style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;">
+                            Ver cursos
+                            <img src="iconos/arrow1.svg" alt="" class="hidden sm:inline pl-2 pt-1 bg-transparent" />
+                        </a>
+                    </div>
+                </div>
+            </swiper-slide>
+
+
+            {/* Slide 7 */}
+            <swiper-slide class="flex w-[250px] sm:w-[420px] h-[250px] sm:h-[380px] bg-[#0488A6] text-white p-[17px] sm:p-[65px] px-[40px] sm:px-[80px] flex-col justify-start items-center rounded-[17px] shadow-lg mr-[8px] sm:mr-[30px]">
+                <h2 class="text-white text-center text-[20px] sm:text-[36px] font-bold sm:leading-[88%] py-2 sm:py-0">
+                    Talleres Abiertos
+                </h2>
+                <div class="mt-4 sm:mt-10 flex flex-col items-center sm:items-start w-full">
+                    <div class="flex justify-center items-center w-full">
+                        <!-- Imagen con margen superior añadido en móviles sin afectar mucho al título -->
+                        <img src="iconos/talleres2.png" alt="" class="h-[80px] sm:h-[110px] object-contain mx-auto mt-3 sm:mt-6" />
+                    </div>
+                    <div class="absolute top-[200px] sm:top-[310px] left-1/2 sm:left-[200px] translate-x-[-50%] sm:translate-x-0 flex items-center gap-2 text-white text-xs sm:text-sm font-semibold">
+                        <a href="" class="flex h-[1.2rem] sm:h-[1.4rem] justify-center items-center px-[30px] sm:px-[41px] py-[15px] sm:py-[21px] text-xs sm:text-sm flex-shrink-0 bg-[#0488A6] text-white transition hover:bg-[#04C4D9] rounded" style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;">
+                            Ver cursos
+                            <img src="iconos/arrow1.svg" alt="" class="hidden sm:inline pl-2 pt-1 bg-transparent" />
+                        </a>
+                    </div>
+                </div>
+            </swiper-slide>
+
+
+
+
         </swiper-container>
     </div>
-
-
-
 </section>
-
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>

@@ -1,97 +1,212 @@
+<nav class="sticky top-0 z-50 border border-black bg-[#024059] shadow-lg w-full h-[5rem] lg:h-[8rem] flex items-center">
+    <!-- Línea vertical -->
+    <hr class="bg-[#F2F23F] w-[0.4rem] lg:w-[0.54rem] h-full border-none md:block" />
 
-    <nav class="sticky top-0 z-50 border border-black bg-[#024059] shadow-lg w-full h-[8rem] flex items-center">
-        <!-- Línea vertical -->
-        <hr class="bg-[#F2F23F] w-[0.54rem] h-full border-none" />
- 
-        <!-- Logo -->
-        <div class="flex items-center mt-[1.56rem] mb-[1.44rem] ml-[4.62rem] mr-[4.92rem]">
-            <a href="#">
-                <img src="/images/logo1.png" alt="Logo" class="h-[5.58rem] w-auto" />
+    <!-- Logo -->
+    <div class="flex items-center mx-auto lg:mt-[1.56rem] lg:mb-[1.44rem] lg:ml-[4.5rem] lg:mr-[4.5rem]">
+        <a href="#inicio">
+            <img src="/images/logo1.png" alt="Logo" class="h-[4rem] lg:h-[5.58rem] w-auto" />
+        </a>
+    </div>
+
+    <!-- Línea vertical (visible en dispositivos grandes) -->
+    <hr class="bg-[#F2F23F] w-[0.06rem] h-[5.04rem] border-none hidden md:block" />
+
+    <!-- Botón hamburguesa (visible solo en móviles) -->
+    <div class="md:hidden absolute left-0 ml-[2rem]">
+        <button id="menu-toggle" class="text-[#F2F23F]">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[1.5rem] w-[1.5rem]">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.12rem" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Enlaces de navegación (ocultos en móviles) -->
+    <div class="hidden md:flex mt-[1.68rem] mb-[1.86rem] mx-[0.4rem] space-x-1"> <!-- Cambio a space-x-1 -->
+        <!-- Menú de Cursos y Talleres -->
+        <div class="relative group">
+            <a href="#" class="flex h-[1.8rem] justify-center items-center mx-[0.4rem] px-[2rem] py-[1.26rem] text-sm flex-shrink-0 bg-[#024059] text-white transition hover:bg-[#0488A6] rounded"
+                style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;">
+                Cursos y Talleres
             </a>
+            <!-- Submenú desplegable -->
+            <div class="absolute left-0 bg-[#024059] text-white p-[2rem] pt-16 w-[50rem] rounded hidden group-hover:block opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="flex justify-between">
+                    <!-- Columna 1 -->
+                    <div class="w-1/3 flex">
+                        <img src="images/Vector2.png" alt="Icono" class="w-[1.4rem] h-[1.2rem] mr-2">
+                        <h4 class="font-bold mb-2">Cursos y Talleres</h4>
+                    </div>
+
+                    <!-- Línea vertical entre columna 1 y 2 -->
+                    <div class="border-l-1 border-[#F2F23F] h-[10rem] mx-4 pr-8"></div>
+
+                    <!-- Columna 2 -->
+                    <div class="w-1/3 mr-6">
+                        <ul>
+                            <li class="mb-4 hover:text-[#0488A6]"><a href="">Auditoría Ágil</a></li>
+                            <li class="mb-4 hover:text-[#0488A6]"><a href="">Auditoría TI</a></li>
+                            <li class="mb-4 hover:text-[#0488A6]"><a href="">Entrenamiento Internacional</a></li>
+                            <li class="mb-4 hover:text-[#0488A6]"><a href="">Entrenamiento Ejecutivo</a></li>
+                        </ul>
+                    </div>
+                    <!-- Columna 3 -->
+                    <div class="w-1/3">
+                        <ul>
+                            <li class="mb-4 hover:text-[#0488A6]"><a href="">Talleres In Company</a></li>
+                            <li class="mb-4 hover:text-[#0488A6]"><a href="">Talleres Abiertos</a></li>
+                            <li class="mb-4 hover:text-[#0488A6]"><a href="">Analítica</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
- 
-        <hr class="bg-[#F2F23F] w-[0.06rem] h-[5.04rem] border-none" />
- 
-        <!-- Enlaces de navegación -->
-        <div class="hidden sm:flex mt-[1.68rem] mb-[1.86rem] flex-wrap mx-[0.625rem]">
-            <a
-                href=""
-                class="flex h-[1.8rem] justify-center items-center mx-[0.625rem] px-[2.46rem] py-[1.26rem] text-sm flex-shrink-0 bg-[#024059] text-white transition hover:bg-[#0488A6] rounded"
-                style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;"
-            >
-                Home
-            </a>
- 
-            <a
-                href=""
-                class="flex h-[1.8rem] justify-center items-center mx-[0.625rem] px-[2.46rem] py-[1.26rem] text-sm flex-shrink-0 bg-[#024059] text-white transition hover:bg-[#0488A6] rounded"
-                style="border-top-left-radius: 0; border-top-right-radius: 1.8rem; border-bottom-left-radius: 1.8rem; border-bottom-right-radius: 0;"
-            >
-                Certificaciones
-            </a>
- 
-            <a
-                href=""
-                class="flex h-[1.8rem] justify-center items-center mx-[0.625rem] px-[2.46rem] py-[1.26rem] text-sm flex-shrink-0 bg-[#024059] text-white transition hover:bg-[#0488A6] rounded"
-                style="border-top-left-radius: 0; border-top-right-radius: 1.8rem; border-bottom-left-radius: 1.8rem; border-bottom-right-radius: 0;"
-            >
-                Cursos y talleres
-            </a>
- 
-            <a
-                href=""
-                class="flex h-[1.8rem] justify-center items-center mx-[0.625rem] px-[2.46rem] py-[1.26rem] text-sm flex-shrink-0 bg-[#024059] text-white transition hover:bg-[#0488A6] rounded"
-                style="border-top-left-radius: 0; border-top-right-radius: 1.8rem; border-bottom-left-radius: 1.8rem; border-bottom-right-radius: 0;"
-            >
-                Diplomados
-            </a>
- 
-            <a
-                href=""
-                class="flex h-[1.8rem] justify-center items-center mx-[0.625rem] px-[2.46rem] py-[1.26rem] text-sm flex-shrink-0 bg-[#024059] text-white transition hover:bg-[#0488A6] rounded"
-                style="border-top-left-radius: 0; border-top-right-radius: 1.8rem; border-bottom-left-radius: 1.8rem; border-bottom-right-radius: 0;"
-            >
-                Clientes
-            </a>
- 
-            <a
-                href=""
-                class="flex h-[1.8rem] justify-center items-center mx-[0.625rem] px-[2.46rem] py-[1.26rem] text-sm flex-shrink-0 bg-[#024059] text-white transition hover:bg-[#0488A6] rounded"
-                style="border-top-left-radius: 0; border-top-right-radius: 1.8rem; border-bottom-left-radius: 1.8rem; border-bottom-right-radius: 0;"
-            >
-                About us
-            </a>
-        </div>
- 
-        <hr class="bg-[#F2F23F] w-[0.06rem] h-[5.04rem] border-none" />
- 
-        <!-- Botón hamburguesa para móviles -->
-        <div class="md:hidden pr-[0.24rem]">
-            <button id="menu-toggle" class="text-white">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    class="h-[1.44rem] w-[1.44rem]"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="0.12rem"
-                        d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
- 
-        <!-- Menú móvil -->
-        <div
-            id="mobile-menu"
-            class="md:hidden hidden bg-gray-800 text-white space-y-[0.24rem] py-[0.24rem] px-[0.36rem]"
-        >
-            <a href="#" class="block hover:text-gray-300">Inicio</a>
-            <a href="#" class="block hover:text-gray-300">Servicios</a>
-            <a href="#" class="block hover:text-gray-300">Sobre Nosotros</a>
-            <a href="#" class="block hover:text-gray-300">Contacto</a>
-        </div>
-    </nav>
+    </div>
+
+    <!-- Otros enlaces de navegación -->
+    <div class="hidden md:flex space-x-1"> <!-- Cambio a space-x-1 -->
+        <a href="" class="flex h-[1.8rem] justify-center items-center mx-[0.4rem] px-[1.8rem] py-[1.26rem] text-sm flex-shrink-0 bg-[#024059] text-white transition hover:bg-[#0488A6] rounded"
+            style="border-top-left-radius: 0; border-top-right-radius: 1.8rem; border-bottom-left-radius: 1.8rem; border-bottom-right-radius: 0;">
+            Certificaciones internacionales
+        </a>
+
+        <a href="" class="flex h-[1.8rem] justify-center items-center mx-[0.4rem] px-[2.2rem] py-[1.26rem] text-sm flex-shrink-0 bg-[#024059] text-white transition hover:bg-[#0488A6] rounded"
+            style="border-top-left-radius: 0; border-top-right-radius: 1.8rem; border-bottom-left-radius: 1.8rem; border-bottom-right-radius: 0;">
+            Diplomados
+        </a>
+
+        <a href="" class="flex h-[1.8rem] justify-center items-center mx-[0.4rem] px-[2.2rem] py-[1.26rem] text-sm flex-shrink-0 bg-[#024059] text-white transition hover:bg-[#0488A6] rounded"
+            style="border-top-left-radius: 0; border-top-right-radius: 1.8rem; border-bottom-left-radius: 1.8rem; border-bottom-right-radius: 0;">
+            Sobre nosotros
+        </a>
+
+        <a href="" class="flex h-[1.8rem] justify-center items-center mx-[0.4rem] px-[2.2rem] py-[1.26rem] text-sm flex-shrink-0 bg-[#024059] text-white transition hover:bg-[#0488A6] rounded"
+            style="border-top-left-radius: 0; border-top-right-radius: 1.8rem; border-bottom-left-radius: 1.8rem; border-bottom-right-radius: 0;">
+            Networking
+        </a>
+
+        <a href="" class="flex h-[1.8rem] justify-center items-center mx-[0.3rem] px-[1.8rem] py-[1.26rem] text-sm flex-shrink-0 bg-[#024059] text-white transition hover:bg-[#0488A6] rounded"
+            style="border-top-left-radius: 0; border-top-right-radius: 1.8rem; border-bottom-left-radius: 1.8rem; border-bottom-right-radius: 0;">
+            Contáctanos
+        </a>
+    </div>
+
+    <!-- Línea vertical (visible en dispositivos grandes) -->
+    <hr class="bg-[#F2F23F] w-[0.06rem] h-[5.04rem] lg:ml-2 border-none hidden md:block" />
+</nav>
+
+
+
+
+
+
+<!-- Menú móvil -->
+<div id="mobile-menu" class="hidden md:hidden absolute top-[5rem] left-0 w-full h-full bg-white text-[#024059] shadow-lg z-50">
+    <!-- Barra superior con el texto dinámico y los iconos -->
+    <div class="bg-[#0488A6] p-4 flex items-center justify-between">
+        <!-- Flecha a la izquierda -->
+        <button id="back-button" class="text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+
+        <!-- Título dinámico "Menú" -->
+        <span id="menu-title" class="text-white text-lg font-semibold">Menú</span>
+
+        <!-- X a la derecha -->
+        <button id="close-menu" class="text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Contenido dinámico del menú móvil -->
+    <div id="menu-options" class="p-5 font-bold">
+        <a href="#" class="block px-4 py-5" data-target="cursos-talleres">Cursos y Talleres</a>
+        <a href="#" class="block px-4 py-5" data-target="certificaciones">Certificaciones internacionales</a>
+        <a href="#" class="block px-4 py-5" data-target="diplomados">Diplomados</a>
+        <a href="#" class="block px-4 py-5" data-target="nosotros">Sobre Nosotros</a>
+        <a href="#" class="block px-4 py-5" data-target="networking">Networking</a>
+        <a href="#" class="block px-4 py-5" data-target="contactanos">Contáctanos</a>
+    </div>
+</div>
+
+<script>
+    // Toggle mobile menu
+    const menuButton = document.getElementById('menu-toggle') as HTMLElement | null;
+    const mobileMenu = document.getElementById('mobile-menu') as HTMLElement | null;
+    const closeButton = document.getElementById('close-menu') as HTMLElement | null;
+    const backButton = document.getElementById('back-button') as HTMLElement | null;
+    const menuTitle = document.getElementById('menu-title') as HTMLElement | null;
+    const menuOptions = document.getElementById('menu-options') as HTMLElement | null;
+
+    // Mostrar u ocultar el menú móvil
+    if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');  // Show or hide menu
+        });
+    }
+
+    // Cerrar el menú móvil cuando se haga clic en la "X"
+    if (closeButton && mobileMenu) {
+        closeButton.addEventListener('click', function() {
+            mobileMenu.classList.add('hidden');
+        });
+    }
+
+    // Acción para la flecha (regresar o cerrar, dependiendo de tu lógica)
+    if (backButton && menuTitle && menuOptions) {
+        backButton.addEventListener('click', function() {
+            // Cambiar título de vuelta a "Menú" y restaurar opciones principales
+            menuTitle.textContent = "Menú";
+            menuOptions.innerHTML = `
+                <a href="#" class="block px-4 py-5" data-target="cursos-talleres">Cursos y Talleres</a>
+                <a href="#" class="block px-4 py-5" data-target="certificaciones">Certificaciones internacionales</a>
+                <a href="#" class="block px-4 py-5" data-target="diplomados">Diplomados</a>
+                <a href="#" class="block px-4 py-5" data-target="nosotros">Sobre Nosotros</a>
+                <a href="#" class="block px-4 py-5" data-target="networking">Networking</a>
+                <a href="#" class="block px-4 py-5" data-target="contactanos">Contáctanos</a>
+            `;
+        });
+    }
+
+    // Cambiar opciones al hacer clic en un enlace
+    if (menuOptions) {
+        menuOptions.addEventListener('click', function(e) {
+            const target = e.target as HTMLElement;  // Asegúrate de que target sea un HTMLElement
+
+            if (target && target.tagName === 'A') {
+                const targetId = target.getAttribute('data-target');
+
+                // Cambiar el título según el botón presionado
+                if (targetId === 'cursos-talleres' && menuTitle && menuOptions) {
+                    menuTitle.textContent = "Cursos y Talleres";
+                    menuOptions.innerHTML = `
+                        <a href="#" class="block px-4 py-5">Auditoría Ágil</a>
+                        <a href="#" class="block px-4 py-5">Auditoría TI</a>
+                        <a href="#" class="block px-4 py-5">Entrenamiento Internacional</a>
+                        <a href="#" class="block px-4 py-5">Entrenamiento Ejecutivo</a>
+                        <a href="#" class="block px-4 py-5">Talleres In Company</a>
+                        <a href="#" class="block px-4 py-5">Talleres Abiertos</a>
+                    `;
+                }
+                // Aquí puedes agregar más condiciones para los otros botones.
+
+                // Añadir un listener para el "Volver" y restaurar el menú
+                const backToMenu = document.getElementById('back-to-menu') as HTMLElement | null;
+                if (backToMenu) {
+                    backToMenu.addEventListener('click', function() {
+                        if (backButton) {
+                            backButton.click();
+                        }
+                    });
+                }
+            }
+        });
+    }
+</script>
+
+
+

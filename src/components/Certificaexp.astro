@@ -1,29 +1,85 @@
-<div
-    class="flex items-center justify-between h-[635px] overflow-hidden bg-[#0488A6]"
->
-    <!-- Contenedor para la imagen con restricciones -->
-    <div class="flex-shrink-0 flex-grow h-full max-w-[42rem]">
+<div class="relative flex flex-col md:flex-row items-center justify-between h-[25rem] md:h-[30rem] lg:h-[750px] overflow-hidden bg-white md:bg-[#0488A6]">
+    <!-- Card con imagen y texto en móviles y pantallas medias -->
+    <div class="relative w-full h-full md:hidden rounded-lg overflow-hidden shadow-lg p-4">
+        <!-- Imagen de fondo -->
+        <div class="relative w-full h-[23rem]">
+            <img
+                src="images/imagen2.png"
+                alt="Imagen"
+                class="w-full h-full object-cover rounded-lg"
+            />
+            <!-- Imagen de la máscara -->
+            <img
+                src="images/mascara4.png"
+                alt="Máscara"
+                class="w-full h-full object-cover absolute top-0 left-0 rounded-lg"
+            />
+        </div>
+        
+        <!-- Texto sobre la imagen -->
+        <div class="absolute top-[10%] left-1/2 transform -translate-x-1/2 w-[90%] sm:w-[80%] text-white text-left p-[2.5rem] z-10">
+            <h1 class="text-[20px] font-bold">
+                Certifica <br /><span class="block">tu experiencia</span>
+            </h1>
+            <p class="text-[0.8rem] pt-4 w-[15rem]">
+                Rheoli University proporciona certificaciones y capacitaciones para
+                profesionales de alto nivel, utilizando metodologías y herramientas acordes a las exigencias internacionales.
+            </p>
+            <p class="text-[0.8rem] mt-2 w-[15rem]">
+                Certificamos tus competencias y habilidades profesionales.
+            </p>
+        </div>
+        
+        <!-- Botón en la parte inferior izquierda (solo en móviles) -->
+        <a
+            href=""
+            class="absolute bottom-[10%] right-[10%] flex justify-center items-center px-[20px] py-[10px] text-xs bg-[#0488A6] text-white transition hover:bg-[#04C4D9] rounded"
+            style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;"
+        >
+            Ver certificados
+            <img
+                src="iconos/arrow1.svg"
+                alt="arrow"
+                class="h-[5px] pl-2 bg-transparent"
+            />
+        </a>
+    </div>
+
+
+
+    <!-- Contenedor para la imagen en pantallas grandes (sin bordes ni sombra) -->
+    <div class="hidden md:block flex-grow md:h-[30rem] lg:h-full lg:max-w-[50rem] w-full relative">
         <img
             src="images/imagen2.png"
             alt="Imagen"
-            class="w-full h-full object-cover"
+            class="md:w-[40rem] lg:w-full h-full object-cover md:object-[80%]"
         />
     </div>
-
-    <!-- Texto centrado en el espacio restante -->
-    <div class="flex flex-col justify-center px-[4rem] w-[52%]">
-        <h1
-            class="text-[5.375rem] text-white font-normal leading-[4.73rem] py-[53px]"
-        >
-            Certifica <br /><span class="block">tu Experiencia</span>
+        
+    <!-- Texto normal en pantallas grandes (sin bordes ni sombra) -->
+    <div class="hidden md:flex flex-col justify-center md:px-[3.5rem] text-left lg:w-[52%] z-10 relative">
+        <h1 class="md:text-[3rem] lg:text-[5.375rem] text-white font-bold lg:leading-[4.73rem] lg:py-[60px]">
+            Certifica <br /><span class="block">tu experiencia</span>
         </h1>
-        <p class="text-[1.25rem] text-white pt-[1rem]">
+        <p class="md:w-[30rem] lg:w-[40rem] lg:text-[1.25rem] text-white md:pt-[1rem] lg:pt-[1rem]">
             Rheoli University proporciona certificaciones y capacitaciones para
-            profesionales de alto nivel, para lo que se utilizan metodologías y
-            herramientas acordes a las exigencias internacionales.
+            profesionales de alto nivel, utilizando metodologías y herramientas acordes a las exigencias internacionales.
         </p>
-        <p class="text-[1.25rem] text-white mt-5 pb-[53px]">
+        <p class="lg:text-[1.25rem] text-white mt-5 pb-[2rem] lg:pb-[60px]">
             Certificamos tus competencias y habilidades profesionales.
         </p>
     </div>
+    <a
+    href=""
+    class="hidden absolute bottom-[10%] right-[10%] md:flex justify-center items-center px-[30px] py-[15px] text-sm bg-[#0488A6] text-white transition hover:bg-[#04C4D9] rounded"
+    style="border-top-left-radius: 0; border-top-right-radius: 3.2rem; border-bottom-left-radius: 3.2rem; border-bottom-right-radius: 0;"
+    >
+        Ver certificados
+        <img
+            src="iconos/arrow1.svg"
+            alt="arrow"
+            class="h-[8px] pl-2 bg-transparent"
+        />
+    </a>
+
 </div>
